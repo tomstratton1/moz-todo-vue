@@ -4,7 +4,8 @@
             type="checkbox"
             class="checkbox"
             :id="id" 
-            :checked="isDone" />
+            :checked="isDone" 
+            @change="$emit('checkbox-changed')"/>
         <label class="checkbox-label" :for="id">{{label}}</label>
     </div>
 
